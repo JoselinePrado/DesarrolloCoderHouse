@@ -1,0 +1,107 @@
+/* resetear estilo del navegador */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* estilos para seccion del logo */
+.header{
+    background-color: #FF6D01;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo img{
+    height: 55px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.header h1{
+    color: white;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex; /* Los elementos dentro del logo se alineen en una fila */
+    align-items: center; /* Aline la imagen y el texto al centro verticalmente */
+}
+
+/* estilos para sacar los puntitos del estilo de la lista */
+.header .nav-links{
+    list-style: none; 
+}
+/* estilos para que los link figuren de forma horizontal */
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+/* cambiar tamanio y color a los links */
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none; /* quitar linea debajo de los enlaces */
+}
+
+/* efecto hover a los links, aumentando tamanio al pasar por arriba*/
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+/* efecto a los botones*/
+.header .btn button{
+    font-weight: lighter;
+    color: #FF6D01;
+    padding: 9px 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* efecto header a los botones*/
+.header .btn button:hover{
+    transform: scale(1.1);
+}
+
+/* ajustar estilo de la imagen de construccion del sitio */
+.main img{
+    height: 700px;
+    width: auto;
+    justify-content: center;
+    align-items: center;       /* Centra verticalmente */
+}
+
+.main{
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.main h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF6D01;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer{
+    background-color: #FF6D01;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+    font-style: italic;
+}
